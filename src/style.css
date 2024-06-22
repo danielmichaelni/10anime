@@ -10,12 +10,15 @@ body {
 }
 
 .title {
+  background: none;
+  border: none;
   color: #5a2e98;
+  cursor: pointer;
   display: flex;
   font-size: 32px;
-  justify-content: center;
-  font-weight: bold;
   font-style: italic;
+  font-weight: bold;
+  justify-content: center;
 }
 
 .row {
