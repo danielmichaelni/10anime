@@ -68,6 +68,15 @@ const main = async () => {
       return
     }
 
+    if (
+      event.getModifierState("Alt") ||
+      event.getModifierState("Control") ||
+      event.getModifierState("Meta") ||
+      event.getModifierState("OS")
+    ) {
+      return
+    }
+
     const target = event.target as HTMLElement
     if (
       target.nodeName === "INPUT" ||

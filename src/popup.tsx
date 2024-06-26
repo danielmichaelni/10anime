@@ -19,13 +19,15 @@ function IndexPopup() {
 
   return (
     <div className="container">
-      <button
-        className="title"
-        onClick={() => {
-          window.open("https://9animetv.to/home")
-        }}>
-        10Anime
-      </button>
+      <div className="titleContainer">
+        <button
+          className="title"
+          onClick={() => {
+            window.open("https://9animetv.to/home")
+          }}>
+          10Anime
+        </button>
+      </div>
       <label className="row">
         <input
           type="checkbox"
