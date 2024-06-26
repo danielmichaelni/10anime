@@ -5,15 +5,15 @@ import "~style.css"
 function IndexPopup() {
   const [skipIntroEnabled, setSkipIntroEnabled] = useStorage(
     "skipIntroEnabled",
-    false
+    true
   )
   const [skipOutroEnabled, setSkipOutroEnabled] = useStorage(
     "skipOutroEnabled",
-    false
+    true
   )
   const [changeSpeedEnabled, setChangeSpeedEnabled] = useStorage(
     "changeSpeedEnabled",
-    false
+    true
   )
   const [speed, setSpeed] = useStorage<number>("speed", 1)
 
