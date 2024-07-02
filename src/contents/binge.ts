@@ -42,7 +42,7 @@ const main = async () => {
     skipIntroEnabled: (c) => {
       isSkipIntroEnabled = c.newValue
     },
-    isSkipOutroEnabled: (c) => {
+    skipOutroEnabled: (c) => {
       isSkipOutroEnabled = c.newValue
     },
     isChangeSpeedEnabled: (c) => {
