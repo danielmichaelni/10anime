@@ -31,12 +31,12 @@ const adjustPlaybackRate = (playbackRate: number) => {
 
 const main = async () => {
   let isSkipIntroEnabled =
-    (await storage.get<boolean>("skipIntroEnabled")) || true
+    (await storage.get<boolean>("skipIntroEnabled")) ?? true
   let isSkipOutroEnabled =
-    (await storage.get<boolean>("skipOutroEnabled")) || true
+    (await storage.get<boolean>("skipOutroEnabled")) ?? true
   let isChangeSpeedEnabled =
-    (await storage.get<boolean>("changeSpeedEnabled")) || true
-  let playbackRate = (await storage.get<number>("speed")) || 1
+    (await storage.get<boolean>("changeSpeedEnabled")) ?? true
+  let playbackRate = (await storage.get<number>("speed")) ?? 1
 
   storage.watch({
     skipIntroEnabled: (c) => {
