@@ -3,7 +3,7 @@ import type { PlasmoCSConfig } from "plasmo"
 import { Storage } from "@plasmohq/storage"
 
 export const config: PlasmoCSConfig = {
-  matches: ["https://*.rapid-cloud.co/*"],
+  matches: ["https://*.9animetv.to/*", "https://*.rapid-cloud.co/*"],
   all_frames: true
 }
 
